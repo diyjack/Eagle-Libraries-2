@@ -4046,29 +4046,6 @@ design rules under a new name.</description>
 <wire x1="60.6425" y1="35.2425" x2="60.6425" y2="37.1475" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="3,1,253cf900f8482474"/>
-<approved hash="7,39,2f40047804522f6a"/>
-<approved hash="7,39,8918cd38df3c85a4"/>
-<approved hash="7,39,4519490b458ea225"/>
-<approved hash="18,29,2c0969470cbf4257"/>
-<approved hash="18,29,97ac4968c736977f"/>
-<approved hash="18,29,9f7c4128cf0a994d"/>
-<approved hash="18,29,af12c5738570ef11"/>
-<approved hash="18,29,63dc9ac1dac323de"/>
-<approved hash="18,29,e8e4f1307901e8c6"/>
-<approved hash="18,29,e0a4f9e07733e0fa"/>
-<approved hash="18,29,2f8eedf4b8f47a8e"/>
-<approved hash="18,29,c781f937ac349282"/>
-<approved hash="18,29,efcb6dcd3bd7b9d1"/>
-<approved hash="18,29,9a8b698763999095"/>
-<approved hash="18,29,cf241be01533cf7a"/>
-<approved hash="18,29,4ea41b5015024d46"/>
-<approved hash="18,29,969c36e83b0996cd"/>
-<approved hash="18,29,162c3768393516fc"/>
-<approved hash="18,29,a0af551fc11442a5"/>
-<approved hash="18,29,3e6bbe45504fa660"/>
-</errors>
 </board>
 </drawing>
 </eagle>
