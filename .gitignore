@@ -1,9 +1,4 @@
-
-/eagle.epf
 *.b#?
 *.s#?
 *.l#?
-*/eagleUp/*
-
-
-/Conference Badge
+*~
