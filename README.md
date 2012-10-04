@@ -10,17 +10,17 @@ Author : Anthony Stirk http://ava.upuaut.net
 
 ava.lbr Contains :
 
-NTX2 Horizontal and Vertical Mounting
-uBLOX NEO-6 GPS
-uBLOX MAX-6 GPS
-Sarantel SL1202 Passive Antenna
-ADF7012 
-DS18B20 TO92
-DS18B20 SOIC
-Antenova GPS Module ( Part M10382 )
-ATMega 328P-AU
-JTI Chipscale Antenna
-LM2939 Regulator
-MOSFET (SOT223)
-Panasonic ELLVGG Inductor
+* NTX2 Horizontal and Vertical Mounting
+* uBLOX NEO-6 GPS
+* uBLOX MAX-6 GPS
+* Sarantel SL1202 Passive Antenna
+* ADF7012 
+* DS18B20 TO92
+* DS18B20 SOIC
+* Antenova GPS Module ( Part M10382 )
+* ATMega 328P-AU
+* JTI Chipscale Antenna
+* LM2939 Regulator
+* MOSFET (SOT223)
+* Panasonic ELLVGG Inductor
 
