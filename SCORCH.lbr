@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -93,6 +93,18 @@
 <wire x1="-1" y1="0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
 <wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
 </package>
+<package name="XTAL26">
+<smd name="2" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1" rot="R180"/>
+<smd name="1" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1" rot="R180"/>
+<smd name="3" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1" rot="R180"/>
+<smd name="4" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1" rot="R180"/>
+<wire x1="-1.6" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="1.2" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="-1.2" width="0.127" layer="51"/>
+<text x="-1.8" y="1.8" size="0.3048" layer="25">&gt;NAME</text>
+<text x="0.2" y="-2" size="0.3048" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MAX1947">
@@ -135,6 +147,18 @@
 <pin name="GNDC" x="15.24" y="7.62" length="middle" rot="R180"/>
 <text x="-10.16" y="12.7" size="1.27" layer="95">&gt;NAME</text>
 <text x="2.54" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="XTAL26">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="XTALA" x="-12.7" y="2.54" length="middle"/>
+<pin name="GNDA" x="-12.7" y="-2.54" length="middle"/>
+<pin name="GNDB" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="XTALB" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<text x="-7.366" y="6.096" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.048" y="-7.366" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -205,6 +229,29 @@ http://www.farnell.com/datasheets/1643108.pdfhttp://www.farnell.com/datasheets/1
 <connect gate="G$1" pin="GNDB" pad="5"/>
 <connect gate="G$1" pin="GNDC" pad="6"/>
 <connect gate="G$1" pin="UNBAL" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XTAL26">
+<description>26MHz XTAL for CC430 - 10ppm
+
+http://onecall.farnell.com/aker/c3e-26-000-12-1010-x/crystal-2-5x3mm-cer-26-000mhz/dp/1640981
+
+http://www.farnell.com/datasheets/75412.pdf</description>
+<gates>
+<gate name="G$1" symbol="XTAL26" x="0" y="0"/>
+</gates>
+<devices>
+<device name="A26" package="XTAL26">
+<connects>
+<connect gate="G$1" pin="GNDA" pad="2"/>
+<connect gate="G$1" pin="GNDB" pad="4"/>
+<connect gate="G$1" pin="XTALA" pad="1"/>
+<connect gate="G$1" pin="XTALB" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
